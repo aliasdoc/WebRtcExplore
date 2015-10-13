@@ -1,0 +1,60 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AZSocketIO (0.0.6):
+    - AFNetworking (~> 2.x)
+    - SocketRocket (~> 0.x)
+  - libjingle_peerconnection (9814.2.0)
+  - SocketRocket (0.4)
+  - TLKSimpleWebRTC (1.0.0):
+    - AZSocketIO (= 0.0.6)
+  - TLKWebRTC (2.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - libjingle_peerconnection
+  - TLKSimpleWebRTC (from `https://github.com/otalk/TLKSimpleWebRTC.git`)
+  - TLKWebRTC (from `https://github.com/otalk/TLKWebRTC.git`)
+
+EXTERNAL SOURCES:
+  TLKSimpleWebRTC:
+    :git: https://github.com/otalk/TLKSimpleWebRTC.git
+  TLKWebRTC:
+    :git: https://github.com/otalk/TLKWebRTC.git
+
+CHECKOUT OPTIONS:
+  TLKSimpleWebRTC:
+    :commit: a459335423e98e4540222a86e457f7778c0d9b05
+    :git: https://github.com/otalk/TLKSimpleWebRTC.git
+  TLKWebRTC:
+    :commit: 738d9f9cb4ec30affeeaf79b249208baceb202a4
+    :git: https://github.com/otalk/TLKWebRTC.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  AZSocketIO: 135d76d11e90a0b7509f0f64d448fc8d0cd96e4f
+  libjingle_peerconnection: f03d6c0532595e8b9b233eccea68ad344e0395ac
+  SocketRocket: 01443933b7bc362621325f4607b80b4286a99707
+  TLKSimpleWebRTC: be2ec60106ed78c034c2a85a2945c49ccf92131f
+  TLKWebRTC: 213224bfeec6e89ac829cd11a593e0f04a845df1
+
+COCOAPODS: 0.38.2

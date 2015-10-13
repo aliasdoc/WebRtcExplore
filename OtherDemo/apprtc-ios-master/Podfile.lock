@@ -1,0 +1,12 @@
+PODS:
+  - AppRTC (1.0.1):
+    - AppRTC/include (= 1.0.1)
+  - AppRTC/include (1.0.1)
+
+DEPENDENCIES:
+  - AppRTC
+
+SPEC CHECKSUMS:
+  AppRTC: 10f9c4236e00c8dbff5aadf4364ba30f9bfbaa9c
+
+COCOAPODS: 0.38.2

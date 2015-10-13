@@ -1,0 +1,33 @@
+PODS:
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
+  - libjingle_peerconnection (9814.2.0)
+  - Masonry (0.6.2)
+  - UIViewController+KeyboardAnimation (1.2)
+
+DEPENDENCIES:
+  - FontAwesomeKit
+  - libjingle_peerconnection
+  - Masonry
+  - UIViewController+KeyboardAnimation (~> 1.2)
+
+SPEC CHECKSUMS:
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  libjingle_peerconnection: f03d6c0532595e8b9b233eccea68ad344e0395ac
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  UIViewController+KeyboardAnimation: 5beaa558cabe3353c37fdd5476c68dac8dc507d5
+
+COCOAPODS: 0.38.2

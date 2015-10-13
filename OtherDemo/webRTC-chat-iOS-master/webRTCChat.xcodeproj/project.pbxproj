@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD17759FE1525BE1E5D2907E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3C08E05B09D62DF9C95866 /* libPods.a */; };
+		FA8922231AB2479C0078D218 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8922221AB2479C0078D218 /* main.m */; };
+		FA8922261AB2479C0078D218 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8922251AB2479C0078D218 /* AppDelegate.m */; };
+		FA89222E1AB2479D0078D218 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA89222D1AB2479D0078D218 /* Images.xcassets */; };
+		FA8922311AB2479D0078D218 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA89222F1AB2479D0078D218 /* LaunchScreen.xib */; };
+		FA89223D1AB2479D0078D218 /* webRTCChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89223C1AB2479D0078D218 /* webRTCChatTests.m */; };
+		FA8922481AB25EA80078D218 /* ChatWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8922471AB25EA80078D218 /* ChatWindowViewController.m */; };
+		FA89224B1AB25ED10078D218 /* RTCService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89224A1AB25ED10078D218 /* RTCService.m */; };
+		FA89224F1AB268920078D218 /* ChatControlMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89224E1AB268920078D218 /* ChatControlMessage.m */; };
+		FA8922521AB27BA20078D218 /* SDPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8922511AB27BA20078D218 /* SDPModel.m */; };
+		FA8922551AB287B50078D218 /* ICECandidateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8922541AB287B50078D218 /* ICECandidateModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA8922371AB2479D0078D218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8922151AB2479C0078D218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA89221C1AB2479C0078D218;
+			remoteInfo = webRTCChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B3C08E05B09D62DF9C95866 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		406B4DD372E2EA7BF3C5D6DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6C57E0DF784B7F7952FE09F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA89221D1AB2479C0078D218 /* webRTCChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webRTCChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8922211AB2479C0078D218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8922221AB2479C0078D218 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA8922241AB2479C0078D218 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA8922251AB2479C0078D218 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA89222D1AB2479D0078D218 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA8922301AB2479D0078D218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FA8922361AB2479D0078D218 /* webRTCChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webRTCChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA89223B1AB2479D0078D218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA89223C1AB2479D0078D218 /* webRTCChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webRTCChatTests.m; sourceTree = "<group>"; };
+		FA8922461AB25EA80078D218 /* ChatWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWindowViewController.h; sourceTree = "<group>"; };
+		FA8922471AB25EA80078D218 /* ChatWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWindowViewController.m; sourceTree = "<group>"; };
+		FA8922491AB25ED10078D218 /* RTCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCService.h; sourceTree = "<group>"; };
+		FA89224A1AB25ED10078D218 /* RTCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCService.m; sourceTree = "<group>"; };
+		FA89224D1AB268920078D218 /* ChatControlMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatControlMessage.h; sourceTree = "<group>"; };
+		FA89224E1AB268920078D218 /* ChatControlMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatControlMessage.m; sourceTree = "<group>"; };
+		FA8922501AB27BA20078D218 /* SDPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPModel.h; sourceTree = "<group>"; };
+		FA8922511AB27BA20078D218 /* SDPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPModel.m; sourceTree = "<group>"; };
+		FA8922531AB287B50078D218 /* ICECandidateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECandidateModel.h; sourceTree = "<group>"; };
+		FA8922541AB287B50078D218 /* ICECandidateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECandidateModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA89221A1AB2479C0078D218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD17759FE1525BE1E5D2907E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8922331AB2479D0078D218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF41DB1E3CBD98BE7D9AEB53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B3C08E05B09D62DF9C95866 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF2851EA295F7253EC54A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				406B4DD372E2EA7BF3C5D6DC /* Pods.debug.xcconfig */,
+				6C57E0DF784B7F7952FE09F2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA8922141AB2479C0078D218 = {
+			isa = PBXGroup;
+			children = (
+				FA89221F1AB2479C0078D218 /* webRTCChat */,
+				FA8922391AB2479D0078D218 /* webRTCChatTests */,
+				FA89221E1AB2479C0078D218 /* Products */,
+				BFF2851EA295F7253EC54A46 /* Pods */,
+				BF41DB1E3CBD98BE7D9AEB53 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA89221E1AB2479C0078D218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA89221D1AB2479C0078D218 /* webRTCChat.app */,
+				FA8922361AB2479D0078D218 /* webRTCChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA89221F1AB2479C0078D218 /* webRTCChat */ = {
+			isa = PBXGroup;
+			children = (
+				FA89224C1AB2687E0078D218 /* model */,
+				FA8922241AB2479C0078D218 /* AppDelegate.h */,
+				FA8922251AB2479C0078D218 /* AppDelegate.m */,
+				FA89222D1AB2479D0078D218 /* Images.xcassets */,
+				FA89222F1AB2479D0078D218 /* LaunchScreen.xib */,
+				FA8922201AB2479C0078D218 /* Supporting Files */,
+				FA8922461AB25EA80078D218 /* ChatWindowViewController.h */,
+				FA8922471AB25EA80078D218 /* ChatWindowViewController.m */,
+				FA8922491AB25ED10078D218 /* RTCService.h */,
+				FA89224A1AB25ED10078D218 /* RTCService.m */,
+			);
+			path = webRTCChat;
+			sourceTree = "<group>";
+		};
+		FA8922201AB2479C0078D218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA8922211AB2479C0078D218 /* Info.plist */,
+				FA8922221AB2479C0078D218 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA8922391AB2479D0078D218 /* webRTCChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA89223C1AB2479D0078D218 /* webRTCChatTests.m */,
+				FA89223A1AB2479D0078D218 /* Supporting Files */,
+			);
+			path = webRTCChatTests;
+			sourceTree = "<group>";
+		};
+		FA89223A1AB2479D0078D218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA89223B1AB2479D0078D218 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA89224C1AB2687E0078D218 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA89224D1AB268920078D218 /* ChatControlMessage.h */,
+				FA89224E1AB268920078D218 /* ChatControlMessage.m */,
+				FA8922501AB27BA20078D218 /* SDPModel.h */,
+				FA8922511AB27BA20078D218 /* SDPModel.m */,
+				FA8922531AB287B50078D218 /* ICECandidateModel.h */,
+				FA8922541AB287B50078D218 /* ICECandidateModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA89221C1AB2479C0078D218 /* webRTCChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8922401AB2479D0078D218 /* Build configuration list for PBXNativeTarget "webRTCChat" */;
+			buildPhases = (
+				0250B96F1F1E280F9B304ECF /* Check Pods Manifest.lock */,
+				FA8922191AB2479C0078D218 /* Sources */,
+				FA89221A1AB2479C0078D218 /* Frameworks */,
+				FA89221B1AB2479C0078D218 /* Resources */,
+				BD37EE66D496CE5FEB51F610 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = webRTCChat;
+			productName = webRTCChat;
+			productReference = FA89221D1AB2479C0078D218 /* webRTCChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA8922351AB2479D0078D218 /* webRTCChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8922431AB2479D0078D218 /* Build configuration list for PBXNativeTarget "webRTCChatTests" */;
+			buildPhases = (
+				FA8922321AB2479D0078D218 /* Sources */,
+				FA8922331AB2479D0078D218 /* Frameworks */,
+				FA8922341AB2479D0078D218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8922381AB2479D0078D218 /* PBXTargetDependency */,
+			);
+			name = webRTCChatTests;
+			productName = webRTCChatTests;
+			productReference = FA8922361AB2479D0078D218 /* webRTCChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA8922151AB2479C0078D218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = com.skorulis;
+				TargetAttributes = {
+					FA89221C1AB2479C0078D218 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FA8922351AB2479D0078D218 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FA89221C1AB2479C0078D218;
+					};
+				};
+			};
+			buildConfigurationList = FA8922181AB2479C0078D218 /* Build configuration list for PBXProject "webRTCChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA8922141AB2479C0078D218;
+			productRefGroup = FA89221E1AB2479C0078D218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA89221C1AB2479C0078D218 /* webRTCChat */,
+				FA8922351AB2479D0078D218 /* webRTCChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA89221B1AB2479C0078D218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8922311AB2479D0078D218 /* LaunchScreen.xib in Resources */,
+				FA89222E1AB2479D0078D218 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8922341AB2479D0078D218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0250B96F1F1E280F9B304ECF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD37EE66D496CE5FEB51F610 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA8922191AB2479C0078D218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8922481AB25EA80078D218 /* ChatWindowViewController.m in Sources */,
+				FA8922521AB27BA20078D218 /* SDPModel.m in Sources */,
+				FA89224F1AB268920078D218 /* ChatControlMessage.m in Sources */,
+				FA89224B1AB25ED10078D218 /* RTCService.m in Sources */,
+				FA8922551AB287B50078D218 /* ICECandidateModel.m in Sources */,
+				FA8922261AB2479C0078D218 /* AppDelegate.m in Sources */,
+				FA8922231AB2479C0078D218 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8922321AB2479D0078D218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA89223D1AB2479D0078D218 /* webRTCChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA8922381AB2479D0078D218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA89221C1AB2479C0078D218 /* webRTCChat */;
+			targetProxy = FA8922371AB2479D0078D218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA89222F1AB2479D0078D218 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8922301AB2479D0078D218 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA89223E1AB2479D0078D218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA89223F1AB2479D0078D218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA8922411AB2479D0078D218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406B4DD372E2EA7BF3C5D6DC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = webRTCChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA8922421AB2479D0078D218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C57E0DF784B7F7952FE09F2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = webRTCChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA8922441AB2479D0078D218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = webRTCChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/webRTCChat.app/webRTCChat";
+			};
+			name = Debug;
+		};
+		FA8922451AB2479D0078D218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = webRTCChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/webRTCChat.app/webRTCChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA8922181AB2479C0078D218 /* Build configuration list for PBXProject "webRTCChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA89223E1AB2479D0078D218 /* Debug */,
+				FA89223F1AB2479D0078D218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8922401AB2479D0078D218 /* Build configuration list for PBXNativeTarget "webRTCChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8922411AB2479D0078D218 /* Debug */,
+				FA8922421AB2479D0078D218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8922431AB2479D0078D218 /* Build configuration list for PBXNativeTarget "webRTCChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8922441AB2479D0078D218 /* Debug */,
+				FA8922451AB2479D0078D218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA8922151AB2479C0078D218 /* Project object */;
+}

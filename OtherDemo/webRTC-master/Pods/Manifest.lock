@@ -1,0 +1,16 @@
+PODS:
+  - AppRTC (1.0.0):
+    - AppRTC/include
+  - AppRTC/include (1.0.0)
+
+DEPENDENCIES:
+  - AppRTC (from `.`)
+
+EXTERNAL SOURCES:
+  AppRTC:
+    :path: .
+
+SPEC CHECKSUMS:
+  AppRTC: 1e1e18e474a6dd8f84e87fc411d955302e145e63
+
+COCOAPODS: 0.34.4
